@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* базовые подключения */
+@import url("vars");
+@import url("mixins");
+@import url("fonts");
+@import url("settings");
+/* подключения компонентов страницы */
+@import url("./components/header");/*# sourceMappingURL=main.css.map */
