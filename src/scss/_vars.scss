@@ -1,6 +1,7 @@
 :root {
   // base
   --font-family: "OpenSans";
+  --font-second: "Playfair-Display";
   --content-width: 1280px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -12,4 +13,6 @@
   --primary-color: #a65cf0;
   --secondary-color: #ff862f;
   --grey-color: #9999;
+  --grey-shade: #666;
+  --gold-color: #d5b986;
 }

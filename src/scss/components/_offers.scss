@@ -1,0 +1,130 @@
+/* stylelint-disable selector-pseudo-element-colon-notation */
+/* stylelint-disable declaration-no-important */
+/* stylelint-disable declaration-empty-line-before */
+.offers {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__top {
+    @include flex-all-sb;
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  &__btn-swiper {
+    display: flex;
+    margin-top: 19px;
+  }
+
+  .offers-button-next,
+  .offers-button-prev {
+    position: static;
+    margin-left: 14px;
+    border: 2px solid var(--primary-color);
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .offers-button-next:after,
+  .offers-button-prev:after {
+    font-size: 10px;
+    color: var(--primary-color);
+  }
+
+  &__slide {
+    border-radius: 10px;
+    width: 296px !important;
+    background-color: var(--grey-light-color);
+  }
+
+  &__slide-big {
+    border-radius: 10px;
+    width: calc(100% - (32px + 296px) * 2) !important;
+    background-color: var(--grey-light-color);
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    min-height: 452px;
+
+    &--big1 {
+      background-image: url("../img/card-bg.svg");
+      background-position: bottom 32px right 30px;
+      background-size: 230px 107px;
+      background-repeat: no-repeat;
+    }
+
+    &--big2 {
+      background-image: url("../img/card-bg2.svg");
+      background-position: bottom 32px right 30px;
+      background-size: 230px 107px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .wrapper {
+    margin-top: auto;
+  }
+
+  &__discount {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    clip-path: polygon(89% 0, 100% 50%, 89% 100%, 0% 100%, 0 50%, 0% 0%);
+    padding: 7px 15px 7px 6px;
+    min-width: 71px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+  }
+
+  &__images {
+    @include flex-all-center;
+    margin-top: auto;
+    margin-bottom: 16px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 21px;
+    max-width: 224px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--black-color);
+  }
+
+  &__prices {
+    @include flex-v-center;
+    margin-bottom: 22px;
+
+    &--new {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 18px;
+      line-height: 130%;
+      color: var(--secondary-color);
+    }
+
+    &--old {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 130%;
+      text-decoration-line: line-through;
+      color: var(--grey-color);
+    }
+  }
+
+  &__btn {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 18px 33px;
+  }
+}

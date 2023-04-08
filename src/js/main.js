@@ -17,16 +17,49 @@ const choices2 = new Choices(element2, {
 var swiper = new Swiper(".hero__swiper", {
   spaceBetween: 30,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+});
+
+
+// Swiper offers
+
+var swiper2 = new Swiper('.offers__swiper', {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 32,
+  slidesPerGroup: 3,
+  speed: 1000,
+  pagination: {
+    clickable: true,
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
   },
+  navigation: {
+    nextEl: ".swiper-button-next, offers-button-next",
+    prevEl: ".swiper-button-prev, offers-button-prev",
+  }
+});
+
+
+// Swiper useful
+
+var swiper3 = new Swiper('.useful__swiper', {
+  slidesPerView: 2,
+  loop: true,
+  spaceBetween: 32,
+  slidesPerGroup: 1,
+  speed: 1000,
+  navigation: {
+    nextEl: ".swiper-button-next, useful-button-next",
+    prevEl: ".swiper-button-prev, useful-button-prev",
+  }
 });

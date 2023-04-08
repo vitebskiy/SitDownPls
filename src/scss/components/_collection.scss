@@ -1,0 +1,32 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+.collection {
+  background-image: url("../img/collection-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__content {
+    padding: 157px 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 49px;
+    max-width: 508px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--white-color);
+  }
+
+  &__gold {
+    font-family: "Playfair-Display";
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: var(--gold-color);
+  }
+
+  &__btn {
+    padding: 22px 31px;
+  }
+}

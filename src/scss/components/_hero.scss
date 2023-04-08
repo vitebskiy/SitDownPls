@@ -1,3 +1,8 @@
+/* stylelint-disable selector-combinator-space-after */
+/* stylelint-disable max-line-length */
+/* stylelint-disable selector-list-comma-newline-after */
+/* stylelint-disable block-opening-brace-space-before */
+/* stylelint-disable selector-combinator-space-before */
 .hero {
   &__container {
     padding: 0 max(15px, calc((100% - 1280px)) / 2);
@@ -5,6 +10,23 @@
 
   &__swiper {
     height: 100%;
+  }
+
+  &__swiper .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 20px;
+  }
+
+  &__swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+  }
+
+  &__swiper .swiper-pagination-bullet-active {
+    background: var(--black-color);
+  }
+
+  &__swiper .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
   }
 
   &__content {

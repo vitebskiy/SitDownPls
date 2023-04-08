@@ -1,0 +1,64 @@
+/* stylelint-disable declaration-empty-line-before */
+/* stylelint-disable no-duplicate-selectors */
+.useful {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  &__article {
+    border-radius: 0 0 10px 10px;
+    min-height: 100%;
+    background: var(--grey-light-color);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    min-height: 190px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black-color);
+  }
+
+  &__link {
+    padding: 18px 33px;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+
+  &__top {
+    @include flex-all-sb;
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  &__btn-swiper {
+    display: flex;
+    margin-top: 19px;
+  }
+
+  .useful-button-next,
+  .useful-button-prev {
+    position: static;
+    margin-left: 14px;
+    border: 2px solid var(--primary-color);
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .useful-button-next:after,
+  .useful-button-prev:after {
+    font-size: 10px;
+    color: var(--primary-color);
+  }
+}
