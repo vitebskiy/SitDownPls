@@ -1,12 +1,16 @@
 .footer {
   &__wrapper {
-    padding-top: 24px;
-    padding-bottom: 17px;
+    padding-top: 27px;
+    padding-bottom: 18px;
     background-color: #eaeaea;
   }
 
+  &__container {
+    display: flex;
+  }
+
   &__logo {
-    margin-bottom: 31px;
+    margin-bottom: 25px;
   }
 
   &__list-social {
@@ -22,26 +26,43 @@
   }
 
   &__left {
-    grid-column: 2 span;
+    margin-right: 250px;
   }
 
   &__right {
     display: flex;
-    grid-column: 5 / 2 span;
-    gap: 112px;
+    justify-content: space-between;
   }
 
   &__column {
     display: flex;
     flex-direction: column;
+    max-width: 157px;
+  }
+
+  &__column1 {
+    margin-right: 112px;
+  }
+
+  &__column2 {
+    margin-right: 132px;
+  }
+
+  &__column3 {
+    margin-right: 145px;
   }
 
   &__title {
     margin: 0;
+    margin-bottom: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: var(--black-color);
+  }
+
+  &__item {
+    margin-bottom: 5px;
   }
 
   &__link {
@@ -54,6 +75,7 @@
   &__copy {
     display: flex;
     justify-content: center;
+    padding: 5px 0;
     font-size: 14px;
     line-height: 19px;
     color: var(--grey-color);
