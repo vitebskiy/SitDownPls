@@ -8,12 +8,15 @@
       </p>
       <form class="form__wrapper">
         <input class="input-reset form__input" type="text" name="name" placeholder="Как вас зовут?">
-        <input class="input-reset form__input" type="number" name="phone" placeholder="Ваш телефон">
+        <input class="input-reset form__input" type="tel" name="phone" placeholder="Ваш телефон">
         <input class="input-reset form__input" type="email" name="email" placeholder="Ваш e-mail">
         <button class="btn-primary form__btn" type="submit">Отправить</button>
         <div class="form__accord-block">
-          <input class="form__checkbox" type="checkbox" id="scales" name="scales" checked>
-          <p class="form__accord">Принимаю <span class="form__accord--primary">пользовательское соглашение</span></p>
+          <label class="form__checkbox-label">
+            <input class="form__checkbox" type="checkbox">
+            <span class="form__custom-checkbox"></span>
+            <p class="form__accord">Принимаю <span class="form__accord--primary">пользовательское соглашение</span></p>
+          </label>
         </div>
       </form>
     </div>
